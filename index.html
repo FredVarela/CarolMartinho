@@ -569,6 +569,15 @@
     .contact-left, .contact-right { padding: 60px 24px; }
     footer { flex-direction: column; gap: 20px; text-align: center; }
   }
+  
+  
+.video-embed video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 </style>
 </head>
 <body>
@@ -715,10 +724,13 @@
       <div class="video-embed">
         <!--<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen title="Treino de Força"></iframe>-->
 
-		<video controls width="600">
-		  <source src="video.mp4" type="video/mp4">
-		  O teu browser não suporta vídeo.
-		</video>
+		
+<div class="video-embed">
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
 
 
       </div>
